@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hackers Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Hackers Terminal</h1>
+    </div>
+    <p id="one">Initializing Hacking <a class="dot">...</a></p>
+    <p id="two">Reading your files<a class="dot">...</a></p>
+    <p id="three">Password files detected<a class="dot">...</a></p>
+    <p id="four">Sending all passwords and personal files to server<a class="dot">...</a></p>
+    <p id="five">Cleaning up<a class="dot">...</a></p>
+
+
+
+
+    <script>
+        function  delay(ms) {
+            return new Promise(resolve => {
+                setTimeout(resolve, ms);
+            })
+        }
+
+
+        async function animatePara() {
+            await delay(2000);
+            document.querySelector("#one").style.opacity = 1;
+            await delay(2000);
+
+
+
+            document.querySelector("#one .dot").style.animation = "none";
+            document.querySelector("#two").style.opacity = 1; 
+            await delay(2000);
+
+
+
+
+            document.querySelector("#two .dot").style.animation = "none";
+            document.querySelector("#three").style.opacity = 1; 
+            await delay(2000);
+
+
+
+
+            document.querySelector("#three .dot").style.animation = "none";
+            document.querySelector("#four").style.opacity = 1; 
+            await delay(2000);
+
+
+
+            document.querySelector("#four .dot").style.animation = "none";
+            document.querySelector("#five").style.opacity = 1; 
+            await delay(2000);
+        }
+
+
+
+
+        // async function One() {
+        //     setTimeout(() => {
+        //         document.querySelector("#one").style.opacity = 1; 
+        //         //
+        //         }, 2000);
+        // }
+
+        // One();
+
+
+
+        // async function Two() {
+        //     setTimeout(() => {
+        //         document.querySelector("#one .dot").style.animation = "none";
+        //         document.querySelector("#two").style.opacity = 1; 
+
+        //         }, 4000);
+        // }
+
+        // Two();
+
+
+
+
+
+        // async function Three() {
+        //     setTimeout(() => {
+        //         document.querySelector("#two .dot").style.animation = "none";
+        //         document.querySelector("#three").style.opacity = 1; 
+        //         //
+        //         }, 6000);
+        // }
+
+        // Three();
+
+
+
+
+        // async function Four() {
+        //     setTimeout(() => {
+        //         document.querySelector("#three .dot").style.animation = "none";
+        //         document.querySelector("#four").style.opacity = 1; 
+        //         //
+        //         }, 8000);
+        // }
+
+        // Four();
+
+
+
+
+        // async function Five() {
+        //     setTimeout(() => {
+        //         document.querySelector("#four .dot").style.animation = "none";
+        //         document.querySelector("#five").style.opacity = 1; 
+        //         //
+        //         }, 10000);
+        // }
+
+        // Five();
+
+
+
+animatePara();
+
+
+
+
+    </script>
+</body>
+</html>

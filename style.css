@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap');
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: "Agdasima", sans-serif;
+}
+
+
+
+ body p {
+    color: green;
+    font-size: 32px;
+    letter-spacing: 4px;
+}
+
+
+.main {
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    background-color: green;
+    font-size: 40px;
+    border-radius: 5px;
+    letter-spacing: 4px;
+    
+}
+.dot {
+    opacity: 0;
+    animation: visible 0.4s linear infinite alternate;
+}
+
+@keyframes visible {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+p {
+    opacity: 0;
+}
